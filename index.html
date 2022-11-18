@@ -10,9 +10,9 @@
     </head>
     <body>
         <div class="nav-bar">
-            <nav class="navbar p-4 navbar-expand-lg w-100 bg-light" id="nav">
+            <nav class="navbar p-4 navbar-expand-lg w-100" id="nav">
                 <div class="container-fluid w-100">
-                    <span class="navbar-brand mb-0 h1">Logo</span>
+                    <span class="navbar-brand mb-0 h1"><img id="logo" src="images/logocfsp.png" alt="logo"></span>
                     <!-- collapse button for nav bar -->
                     <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -21,31 +21,31 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav position-absolute p-4 navbar-light">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Our Mission</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/our-mission">Our Mission</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Our Values</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/values">Our Values</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Events</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/events">Events</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Buy Local</a>
+                                <a class="nav-link active fw-bold" id="active" aria-current="page" href="#">Buy Local</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Team</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/team">Team</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Get Involved</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/get-involved">Get Involved</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Resources</a>
+                                <a class="nav-link" href="https://csppgh.squarespace.com/resources">Resources</a>
                             </li>
                         </ul>
                     </div>
@@ -64,19 +64,84 @@
             </div>
             <div class="shortcuts">
                 <div id="education" class="link">
-                    <img class="icon"src="images/education-icon.png" alt="education-icon"/>
+                    <img class="w-100" src="images/education-icon.png" alt="education-icon"/>
                     <h5>Why is this important</h5>
                 </div>
                 <div id="directory" class="link">
-                    <img class="icon" src="images/directory-icon.png" alt="directory-icon"/>
+                    <img class="w-100" src="images/directory-icon.png" alt="directory-icon"/>
                     <h5>Directory</h5>
                 </div>
                 <div id="add" class="link">
-                    <img class="icon" src="images/add-icon.png" alt="add-icon"/>
+                    <img class="w-100" src="images/add-icon.png" alt="add-icon"/>
                     <h5>Add a business to the directory</h5>
                 </div>
             </div>
         </header>
+
+        <div class="directory">
+            <div class="container-sm">
+                <div class="row justify-content-center">
+                    <div class="card border-0 rounded shadow" style="width: 18rem;">
+                        <!-- Carousel -->
+                        <div id="carousel" class="carousel slide mt-2" data-bs-ride="true">
+                            <!-- buttons at the bottom of the header to click through images -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <!-- images displayed in carousel -->
+                            <div class="carousel-inner bg-black">
+                                <div class="carousel-item active">
+                                    <img src="images/res1.jpeg" class="d-block center" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/res2.jpeg" class="d-block center" alt="...">
+                                </div>
+                            </div>
+                            <!-- side buttons for switching between images -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <!-- Card body -->
+                        <div class="card-body container-sm" id="layout">
+                            <div class="row justify-content-center">
+                                <!-- business logo -->
+                                <div class="col-3 p-0">
+                                    <img class="w-100 h-auto rounded-circle" src="images/auntLogo.jpeg"/>
+                                </div>
+                                <!-- Business name and filter tags -->
+                                <div class="col-9 pl-1 pr-0">
+                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Aunt Cheryl Bakery & Catering</p>
+                                    <div class="scrolls py-1"><button class="btn btn-sm" id="district">Braddock</button>
+                                                                <button class="btn btn-sm" id="category">Food</button>
+                                                                <button class="btn btn-sm" id="price">$</button></div>
+                                </div>
+                                <!-- Business description -->
+                                <small class="card-text col-12 fw-light my-1 p-0">The café offers a blend of sandwiches, salads, baked goods, healthy smoothies and more.</small>
+                                <!-- Business icons -->
+                                <span class="col-4 p-0">
+                                    <a class="d-inline m-1" href="https://www.facebook.com/people/Aunt-Cheryls/100064799196307/" target="_blank">
+                                        <img class="w-25 align-middle" src="images/facebook.svg">
+                                    </a>
+                                    <a class="d-inline m-1" href="https://www.instagram.com/auntcherylscafe/?hl=en" target="_blank">
+                                        <img class="w-25 align-middle" src="images/instagram.svg">
+                                    </a>
+                                </span>
+                                <span class="col-8 p-0">
+                                    <p class="small text-end p-0 m-0">(412) 727-6011</p>
+                                    <address class="small text-end fw-light">416 Library Street, Braddock, PA 15104</address></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>
