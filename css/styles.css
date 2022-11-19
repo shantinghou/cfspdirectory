@@ -12,14 +12,10 @@ body{
 }
 
 /* font heiarchy */
-h5{
+header h5{
     text-align:center;
     font-size:larger;
     padding-top:10%;
-}
-
-h4{
-    padding-top:5%;
 }
 
 /* nav bar - temporary holder of the client's existing nav bar  */
@@ -31,6 +27,7 @@ h4{
 }
 .navbar-nav{
     right:0;
+    background-color:#FAF0E8;
 }
 #active{
     border-bottom: 5px solid #E1AF6F;
@@ -47,38 +44,11 @@ header{
     color: #FAF0E8;
 }
 
-/* top half of header - title, search bar, and statement */
-.top{
-    padding: 5% 0;
-}
-
-.left, .right{
-    width:43.5%;
-    vertical-align:middle;
-    margin:0 3%;
-    display:inline-block;
-}
-
 .search-bar{
     padding: 2% 5%;
-    border-radius:20px;
-    width:70%;
+    width:100%;
     border:none;
     background-color:#FAF0E8;
-}
-
-/* bottom half of header - shortcuts to different sections */
-.shortcuts{
-    width:60%;
-    display: block;
-    margin:0 auto;
-}
-
-.link{
-    vertical-align: text-top;
-    width:20%;
-    display:inline-block;
-    margin:0% 6%;
 }
 
 /* directory */
@@ -127,4 +97,32 @@ img {
 #price{
     background-color: #CF575B;
     color:#FAF0E8;
+}
+
+#add-business{
+    background-image: linear-gradient(#495E90, #3A4477);
+}
+
+#formModal .modal-content{
+    background-image: linear-gradient(to right, #495E90, #3A4477);
+    border: none;
+}
+
+#formModal .modal-title{
+    color:#E1AF6F;
+}
+
+.submit{
+    background-color:#E1AF6F;
+    color:#495E90;
+    border:none;
+    padding:1% 2%;
+}
+
+.edit-icon{
+    width: 170px;
+}
+
+.modal{
+    background-color:rgba(0, 0, 0, 0.3);
 }
