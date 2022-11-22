@@ -133,7 +133,8 @@ img {
     color:#32366A;
     font-size: 70%;
     font-weight: 650px;
-    padding-left:3%;
+    padding-left:10%;
+    padding-right:10%;
 }
 .accordion-header button:not(.collapsed){
     color:#32366A;
@@ -207,6 +208,9 @@ img {
     font-weight:bold;
     text-align: center;
     padding: 1% 5% 1% 5%;
+}
+.education .row{
+    max-width:100%;
 }
 .education button.carousel-control-prev{
     justify-content:flex-start;
