@@ -44,6 +44,14 @@ header{
     color: #FAF0E8;
 }
 
+.shortcut{
+    opacity:70%;
+    cursor:pointer;
+}
+
+.shortcut:hover{
+    opacity:100%;
+}
 .search-bar{
     padding: 2% 5%;
     width:100%;
@@ -65,6 +73,12 @@ header{
     object-position: center;
 }
 
+.center-expand{
+    object-fit: cover;
+    width:100%;
+    height:300px;
+    object-position: center;
+}
 img {
     width:100%;
     object-fit: cover;
