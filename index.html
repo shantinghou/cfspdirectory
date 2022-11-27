@@ -217,8 +217,34 @@
             </div> 
         </div>    
         <!-- end of education section -->
-
+        <!-- Directory -->
         <div class="directory">
+            <h2>Directory</h2>
+            <div class="search-bar">
+                <div class="row justify-content-center bg-dark rounded-3 py-2">
+                    <div class="col-md-5">
+                        <form role="search" class="my-2">
+                            <input type="search" class="search-bar rounded-5" placeholder="Search Businesses" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="dropdown col-md-4 align-middle">
+                        <button class="btn btn-primary dropdown-toggle rounded-5 align-middle w-100 my-2 text-start px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><span class="dropdown-item-text">Dropdown item text</span></li>
+                            <li><a class="dropdown-item" >Food</a></li>
+                            <li><a class="dropdown-item" >Retail</a></li>
+                            <li><a class="dropdown-item" >Real-estate</a></li>
+                            <li><a class="dropdown-item" >Arts & Entertainment</a></li>
+                            <li><a class="dropdown-item" >Finance</a></li>
+                            <li><a class="dropdown-item" >Healthcare</a></li>
+                            <li><a class="dropdown-item" >Others</a></li>
+                          </ul>
+                      </div>
+                    <button type="button" class="col-md-2 btn rounded-5 text-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#filterModal">Advanced Filter</button>
+                </div>
+            </div>
             <div class="container-sm">
                 <div class="row justify-content-center">
                     <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#cardOne"> -->
@@ -359,6 +385,173 @@
                 </div>
             </div>
         </div>
+        </div>
+        <!-- Advanced Filter popup -->
+        <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                <h1 class="modal-title fs-4" id="filterModalLabel">Advanced Filters</h1>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body border-0 py-0">
+                    <form class="row g-3">
+                        <div class="col-md-4 my-0">
+                            <label for="inputPayment" class="form-label">Category:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Food
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Retail
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Real Estate
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Transportation
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Arts & Entertainment
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Finance
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Healthcare
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Other
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-0">
+                            <label for="inputPayment" class="form-label">Neighborhood:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Braddock
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Monroeville 
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Mr Washington
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Shadyside
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Homewood
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    North Oakland
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Cultural District
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Point Breeze
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    East Liberty 
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Lawrenceville
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Downtown
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-0">
+                            <label for="inputPayment" class="form-label">Price:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  $
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  $$
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  $$$
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit rounded-5 r-0 w-25" data-bs-dismiss="modal">Apply</button>
+                      </form>
+                </div>
+                <div class="modal-footer border-0">
+
+                <!-- data-bs-dismiss="modal" -->
+                </div>
+            </div>
+            </div>
         </div>
 
         <div id="add-business" class="py-5 text-white">
