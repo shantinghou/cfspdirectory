@@ -131,8 +131,12 @@ img {
     color:#495E90;
     border:none;
     padding:1% 2%;
+    float:right;
 }
 
+.required {
+    color:#CF575B;
+}
 .edit-icon{
     width: 170px;
 }
