@@ -227,20 +227,18 @@
                             <input type="search" class="search-bar rounded-5" placeholder="Search Businesses" aria-label="Search">
                         </form>
                     </div>
-                    <div class="dropdown col-md-4 align-middle">
-                        <button class="btn btn-primary dropdown-toggle rounded-5 align-middle w-100 my-2 text-start px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            All Categories
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><span class="dropdown-item-text">all categories</span></li>
-                            <li><a class="dropdown-item" >Food</a></li>
-                            <li><a class="dropdown-item" >Retail</a></li>
-                            <li><a class="dropdown-item" >Real-estate</a></li>
-                            <li><a class="dropdown-item" >Arts & Entertainment</a></li>
-                            <li><a class="dropdown-item" >Finance</a></li>
-                            <li><a class="dropdown-item" >Healthcare</a></li>
-                            <li><a class="dropdown-item" >Others</a></li>
-                          </ul>
+                    <div class="dropdown col-md-4 align-middle my-2 rounded-5">
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option value="1">Food</option>
+                            <option value="2">Retail</option>
+                            <option value="3">Real Estate</option>
+                            <option value="4">Transportation</option>
+                            <option value="5">Arts & Entertainment</option>
+                            <option value="6">Finance</option>
+                            <option value="7">Healthcare</option>
+                            <option value="8">Others</option>
+                        </select>
                       </div>
                     <button type="button" class="col-md-2 btn rounded-5 text-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#filterModal">Advanced Filter</button>
                 </div>
@@ -248,7 +246,7 @@
             <div class="container-sm">
                 <div class="row justify-content-center">
                     <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#cardOne"> -->
-                    <div class="card border-0 rounded shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#cardOne">
+                    <div class="card border-0 rounded shadow" style="width: 18rem;">
                         <!-- Carousel -->
                         <div id="carousel" class="carousel slide mt-2" data-bs-ride="true">
                             <!-- buttons at the bottom of the header to click through images -->
@@ -276,7 +274,7 @@
                             </button>
                         </div>
                         <!-- Card body -->
-                        <div class="card-body container-sm" id="layout">
+                        <div class="card-body container-sm" id="layout" data-bs-toggle="modal" data-bs-target="#cardOne">
                             <div class="row justify-content-center">
                                 <!-- business logo -->
                                 <div class="col-3 p-0">
