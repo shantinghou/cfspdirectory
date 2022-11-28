@@ -42,11 +42,13 @@ function dropdownFilter() {
 
     // alert(inputVal);
     var cards = document.getElementsByClassName("card border-0 rounded shadow");
-
+    var inputState = document.getElementById("inputState").value;
+    if (inputState == "Choose...") return;
+    
     clearCards();
     var numCards = 0;
     for (let k = 0; k < cards.length; k++) {
-        if (cards[k].id.includes(document.getElementById("inputState").value)) {
+        if (cards[k].id.includes(inputState)) {
             cards[k].style.display = "block"
             numCards += 1
         } 

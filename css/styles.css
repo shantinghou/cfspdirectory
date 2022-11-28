@@ -219,27 +219,26 @@ img {
 }
 .accordion-body .carouselText p{
     font-weight:250;
-    max-height:70%;
-    overflow:scroll;
 }
 .accordion-body .carouselText{
     color:white;
     margin:2%;
-    max-height:3%;
+    max-height:100%;
 }
 .accordion-body .carouselText .callToAction{
-    font-weight:bold;
+    font-weight:600;
 }
 .accordion-body .carouselText a{
     background-color:#32366A;
     border-radius:40px;
     bottom:0px;
     color:white;
-    font-weight:bold;
+    font-weight:550;
     text-decoration:none;
     padding:4% 8% 4% 8%;
     max-height:10%;
 }
+
 .education {
     background-image: linear-gradient(to left, #E3A56D , #DBC471);
     padding-top: 2%;
@@ -251,20 +250,22 @@ img {
     text-align: center;
     padding: 1% 5% 1% 5%;
 }
-.education .row{
-    max-width:100%;
-}
 .education button.carousel-control-prev{
     justify-content:flex-start;
 }
 .education button.carousel-control-next{
     justify-content:flex-end;
 }
+.education .row{
+    max-width:100%;
+}
 #flush-headingOne{
     box-shadow:0px -1px 5px 1px rgba(128, 128, 128, 0.427);
     padding:0px;
 }
 #reasonRow{
+    align-self:center;
+    margin: auto;
     padding-left:15%;
     padding-right:15%;
 }
@@ -295,7 +296,6 @@ img {
     font-size:110%;
     padding: 10%;
 }
-
 /* responsive design */
 @media only screen and (max-width: 768px) {
     .accordion-body .carousel-item img{
