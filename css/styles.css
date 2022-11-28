@@ -312,3 +312,6 @@ img {
 .card {
     margin: 10px;
 }
+.card-body{
+    cursor:pointer;
+}
