@@ -56,15 +56,25 @@ header{
     padding: 2% 5%;
     width:100%;
     border:none;
-    background-color:#FAF0E8;
+    background-color:#faf0e8d0;
 }
-
 /* directory */
 .directory{
     padding:4em 10%;
     background-color:#FAF0E8;
 }
-
+.dir-title{
+    color:#C15E5F;
+}
+.filter-bar{
+    background-image: linear-gradient(#C46465, #CF575B);
+    box-shadow: 3px 5px 5px 0px rgba(128, 128, 128, 0.427);
+}
+.select-bar{
+    background-color:#faf0e8d0 !important;
+    color:#484848;
+    border:none !important;
+}
 /* carousel images resize, center aligned, as screen size changes */
 .center{
     object-fit: cover;
@@ -132,6 +142,11 @@ img {
     border:none;
     padding:1% 2%;
     float:right;
+}
+.close{
+    background-color:rgb(176, 171, 164);
+    color:#484848;
+    border:none;
 }
 
 .required {
@@ -223,7 +238,7 @@ img {
 }
 .education h2{
     color:#32366A;
-    font-weight:bold;
+    font-weight:600;
     text-align: center;
     padding: 1% 5% 1% 5%;
 }
@@ -256,12 +271,12 @@ img {
 }
 .reasonButton a{
     color: #ffffff;
-    font-weight:bold;
+    font-weight:550;
     text-decoration: none;
 }
 .reasonButton a:visited{
     color: #ffffff;
-    font-weight:bold;
+    font-weight:550;
     text-decoration: none;
 }
 .reasonButton a:hover{

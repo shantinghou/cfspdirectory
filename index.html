@@ -60,7 +60,7 @@
                 <div class="row justify-content-center">
                     <div class="col-8 col-sm-12 my-5">
                         <div class="row justify-content-center">
-                        <h1 class="col-md-6">Support your local businesses</h1>
+                        <h1 class="col-md-6 display-3 fw-semibold">Support your local businesses</h1>
                         <div class="col-md-6">
                             <form role="search" class="my-2" onsubmit="searchCards(true)">
                                 <input id="searchBar1" type="search" class="search-bar rounded-5" placeholder="Search Businesses" aria-label="Search">
@@ -77,7 +77,7 @@
                                 <h5>Why is this important</h5>
                             </div>
                             <div id="directory" class="col-sm-4 col-md-3 col-lg-2 shortcut">
-                                <img class="w-100" src="images/directory-icon.png" alt="directory-icon"/>
+                                <a href="#directoryDiv"><img class="w-100" src="images/directory-icon.png" alt="directory-icon"/></a>
                                 <h5>Directory</h5>
                             </div>
                             <div id="add" class="col-sm-4 col-md-3 col-lg-2 shortcut">
@@ -224,16 +224,16 @@
         
         <!-- Directory -->
         <div id="directoryDiv" class="directory">
-            <h2>Directory</h2>
+            <h2 class="dir-title fw-semibold">Directory</h2>
             <div class="search-bar">
-                <div class="row justify-content-center bg-dark rounded-3 py-2">
+                <div class="row justify-content-center filter-bar rounded-3 py-3">
                     <div class="col-md-5">
                         <form role="search" class="my-2" onsubmit="searchCards(false)">
                             <input id="searchBar2" type="search" class="search-bar rounded-5" placeholder="Search Businesses" aria-label="Search">
                         </form>
                     </div>
-                    <div class="dropdown col-md-4 align-middle my-2 rounded-5">
-                        <select id="inputState" class="form-select" onchange="dropdownFilter()">
+                    <div class="dropdown col-md-4 align-middle my-2">
+                        <select id="inputState" class="form-select select-bar py-2 rounded-5" onchange="dropdownFilter()">
                             <option selected>Choose...</option>
                             <option value="food">Food</option>
                             <option value="retail">Retail</option>
@@ -259,8 +259,8 @@
                     </div>
                     <div class="modal-body border-0 py-0">
                         <form class="row g-3">
-                            <div class="col-md-4 my-0">
-                                <label>Category: </label><br>
+                            <div class="col-md-5 my-0">
+                                <label><b>Category:</b> </label><br>
                                 <input type="checkbox" id="foodbox" value="food" name="category">
                                 <label>Food</label>
                                 <br>
@@ -286,7 +286,7 @@
                                 <label>Other</label> 
                             </div>
                             <div class="col-md-4 my-0">
-                                <label>Neighborhood: </label><br>
+                                <label><b>Neighborhood:</b> </label><br>
                                 <input type="checkbox" id="braddockbox" value="braddock" name="neighborhood">
                                 <label>Braddock</label>
                                 <br>
@@ -324,7 +324,7 @@
                                 <label>Other</label>
                             </div>
                             <div class="col-md-3 my-0">
-                                <label>Price: </label><br>
+                                <label><b>Price:</b> </label><br>
                                 <input type="checkbox" id="$box" value="$" name="price">
                                 <label>$</label>
                                 <br>
@@ -334,8 +334,8 @@
                                 <input type="checkbox" id="$$$box" value="$$$" name="price">
                                 <label>$$$</label>
                             </div>
-                            <button onclick="filterCards()" type="button" class="submit rounded-5 r-0 w-25" data-bs-dismiss="modal">Apply</button>
-                            <button onclick="resetCards()" type="button" class="submit rounded-5 r-0 w-25" data-bs-dismiss="modal">Reset</button>
+                            <button onclick="filterCards()" type="button" class="submit rounded-5 r-0 w-25 mx-1" data-bs-dismiss="modal">Apply</button>
+                            <button onclick="resetCards()" type="button" class="close rounded-5 r-0 w-25 mx-1" data-bs-dismiss="modal">Reset</button>
                         </form>
                     </div>
                     <div class="modal-footer border-0">
@@ -448,13 +448,13 @@
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Vickey's Soul Grill Restaurant & Catering</p>
+                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Vickey's Soul Grill <small>Restaurant & Catering</small></p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">Monroeville</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$$</button></div>
                                 </div>
                                 <!-- Business description -->
-                                <small class="card-text col-12 fw-light my-1 p-0">Vickey's Soul Grill Takeout, We are open! We have BBQ Ribs, and Chicken Dinners.</small>
+                                <small class="card-text col-12 fw-light my-1 p-0">Vickey's Soul Grill Takeout, We are open! We have BBQ Ribs, and ...</small><!--... = Chicken Dinners-->
                                 <!-- Business icons -->
                                 <span class="col-4 p-0">
                                     <a class="d-inline m-1" href="https://www.facebook.com/vickeyssoulgrilltakeoutandcatering/" target="_blank">
@@ -509,7 +509,7 @@
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Carmi Soul Food</p>
+                                    <p class="fs-6 lh-lg fw-bold py-1 m-0">Carmi Soul Food</p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">Mt Washington</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$</button></div>
@@ -570,13 +570,13 @@
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">CobblerWorld</p>
+                                    <p class="fs-6 lh-lg fw-bold py-1 m-0">CobblerWorld</p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">Shadyside</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$$</button></div>
                                 </div>
                                 <!-- Business description -->
-                                <small class="card-text col-12 fw-light my-1 p-0">Welcome to Cobbler World. We specialize in nostalgic and unique desserts.</small>
+                                <small class="card-text col-12 fw-light my-1 p-0">Welcome to Cobbler World. We specialize in nostalgic and...</small> <!-- ...=unique desserts-->
                                 <!-- Business icons -->
                                 <span class="col-4 p-0">
                                     <a class="d-inline m-1" href="https://www.facebook.com/cobblerworldllc/" target="_blank">
@@ -630,7 +630,7 @@
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Ms. Sandy's Kitchen</p>
+                                    <p class="fs-6 lh-lg fw-bold py-1 m-0">Ms. Sandy's Kitchen</p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">Homewood</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$</button></div>
@@ -687,11 +687,11 @@
                             <div class="row justify-content-center">
                                 <!-- business logo -->
                                 <div class="col-3 p-0">
-                                    <img class="w-100 h-auto rounded-circle" src="images/showcaselogo.png"/>
+                                    <img class="w-100 h-auto rounded-circle" src="images/showcaselogo.jpeg"/>
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Showcase Barbeque</p>
+                                    <p class="fs-6 lh-lg fw-bold py-1 m-0">Showcase Barbeque</p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">Homewood</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$$</button></div>
@@ -751,7 +751,7 @@
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">ZBest BBQ</p>
+                                    <p class="fs-6 lh-lg fw-bold py-1 m-0">ZBest BBQ</p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">North Oakland</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$$</button></div>
@@ -811,7 +811,7 @@
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Cooks Catering LLC</p>
+                                    <p class="fs-6 lh-lg fw-bold py-1 m-0">Cooks Catering LLC</p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">Cultural District</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$$</button></div>
@@ -871,13 +871,13 @@
                                 </div>
                                 <!-- Business name and filter tags -->
                                 <div class="col-9 pl-1 pr-0">
-                                    <p class="fs-6 lh-sm fw-bold p-0 m-0">Everyday Café</p>
+                                    <p class="fs-6 lh-lg fw-bold py-1 m-0">Everyday Café</p>
                                     <div class="scrolls py-1"><button class="btn btn-sm" id="district">Point Breeze</button>
                                                                 <button class="btn btn-sm" id="category">Food</button>
                                                                 <button class="btn btn-sm" id="price">$</button></div>
                                 </div>
                                 <!-- Business description -->
-                                <small class="card-text col-12 fw-light my-1 p-0">The coffeeshop with a cause: where passionate people and great coffee meet!</small>
+                                <small class="card-text col-12 fw-light my-1 p-0">The coffeeshop with a cause: where passionate people and great ...</small> <!--...=coffee meet!-->
                                 <!-- Business icons -->
                                 <span class="col-4 p-0">
                                     <a class="d-inline m-1" href="https://www.facebook.com/EverydayCafePgh/" target="_blank">
