@@ -42,6 +42,7 @@ function searchCards(firstBar) {
     event.preventDefault();
     if (firstBar) {
         var inputVal = document.getElementById("searchBar1").value;
+        document.getElementById("directoryDiv").scrollIntoView();
     } else {
         var inputVal = document.getElementById("searchBar2").value;
     }
