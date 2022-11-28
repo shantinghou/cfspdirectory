@@ -44,6 +44,14 @@ header{
     color: #FAF0E8;
 }
 
+.shortcut{
+    opacity:70%;
+    cursor:pointer;
+}
+
+.shortcut:hover{
+    opacity:100%;
+}
 .search-bar{
     padding: 2% 5%;
     width:100%;
@@ -65,6 +73,12 @@ header{
     object-position: center;
 }
 
+.center-expand{
+    object-fit: cover;
+    width:100%;
+    height:300px;
+    object-position: center;
+}
 img {
     width:100%;
     object-fit: cover;
@@ -117,12 +131,169 @@ img {
     color:#495E90;
     border:none;
     padding:1% 2%;
+    float:right;
 }
 
+.required {
+    color:#CF575B;
+}
 .edit-icon{
     width: 170px;
 }
 
 .modal{
     background-color:rgba(0, 0, 0, 0.3);
+}
+
+
+/* education */
+.accordion-header button{
+    color:#32366A;
+    font-size: 70%;
+    font-weight: 650px;
+    padding-left:10%;
+    padding-right:10%;
+}
+.accordion-header button:not(.collapsed){
+    color:#32366A;
+}
+#accordionInner{
+    padding-bottom:2%;
+    padding-left:10%;
+    padding-right:10%;
+}
+.carousel-item{
+    background-color:#495E90;
+    max-height:100%;
+}
+.carousel-item .row{
+    align-items:center;
+}
+.carousel-item .col-4{
+    max-height:50%;
+}
+.accordion .carousel-indicators{
+   bottom:0px;
+   margin-bottom:0%;
+}
+.accordion .carousel-indicators button{
+    border-radius: 50%;
+    height:10px;
+    margin-left:2%; 
+    margin-right:2%; 
+    padding:0.2%;
+    width:10px;
+}
+.accordion-body .carousel-item img{
+    max-width:100%;
+    padding:5% 0% 5% 5%;
+}
+.accordion-body .carouselText h3{
+    font-weight:bold;
+    font-style:italic;
+    max-height:20%;
+}
+.accordion-body .carouselText p{
+    font-weight:250;
+    max-height:70%;
+    overflow:scroll;
+}
+.accordion-body .carouselText{
+    color:white;
+    margin:2%;
+    max-height:3%;
+}
+.accordion-body .carouselText .callToAction{
+    font-weight:bold;
+}
+.accordion-body .carouselText a{
+    background-color:#32366A;
+    border-radius:40px;
+    bottom:0px;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+    padding:4% 8% 4% 8%;
+    max-height:10%;
+}
+.education {
+    background-image: linear-gradient(to left, #E3A56D , #DBC471);
+    padding-top: 2%;
+    max-height:2%;
+}
+.education h2{
+    color:#32366A;
+    font-weight:bold;
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+}
+.education .row{
+    max-width:100%;
+}
+.education button.carousel-control-prev{
+    justify-content:flex-start;
+}
+.education button.carousel-control-next{
+    justify-content:flex-end;
+}
+#flush-headingOne{
+    box-shadow:0px -1px 5px 1px rgba(128, 128, 128, 0.427);
+    padding:0px;
+}
+#reasonRow{
+    padding-left:15%;
+    padding-right:15%;
+}
+.reasonButton{
+    display:flex;
+    text-align: center;
+    color: #FAF0E8;
+}
+.reasonButton img{
+    border: solid 3px white;
+    border-radius: 100%;
+    max-width:60%;
+}
+.reasonButton a{
+    color: #ffffff;
+    font-weight:bold;
+    text-decoration: none;
+}
+.reasonButton a:visited{
+    color: #ffffff;
+    font-weight:bold;
+    text-decoration: none;
+}
+.reasonButton a:hover{
+    color:#495E90;
+}
+.reasonButton p {
+    font-size:110%;
+    padding: 10%;
+}
+
+/* responsive design */
+@media only screen and (max-width: 768px) {
+    .accordion-body .carousel-item img{
+        max-width:90%;
+        padding:2% 2% 2% 2%;
+        margin:auto;
+    }
+    .accordion-body .carouselText{
+        padding: 5%;
+    }
+    .accordion-body .carouselText a{
+        background-color:#32366A;
+        border-radius:40px;
+        bottom:0px;
+        color:white;
+        font-weight:bold;
+        text-decoration:none;
+        padding:2% 4% 2% 4%;
+        max-height:10%;
+    }
+  }
+
+.card {
+    margin: 10px;
 }
