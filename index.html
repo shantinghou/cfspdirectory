@@ -226,13 +226,13 @@
         <div id="directoryDiv" class="directory">
             <h2 class="dir-title fw-semibold">Directory</h2>
             <div class="search-bar">
-                <div class="row justify-content-center filter-bar rounded-3 py-3">
-                    <div class="col-md-5">
+                <div class="row justify-content-center filter-bar rounded-3 py-3 p-0">
+                    <div class="col-7 col-md-5 p-0 m-0">
                         <form role="search" class="my-2" onsubmit="searchCards(false)">
-                            <input id="searchBar2" type="search" class="search-bar rounded-5" placeholder="Search Businesses" aria-label="Search">
+                            <input id="searchBar2" type="search" class="search-bar rounded-5 py-2" placeholder="Search Businesses" aria-label="Search">
                         </form>
                     </div>
-                    <div class="dropdown col-md-4 align-middle my-2">
+                    <div class="dropdown d-none d-sm-none d-md-block col-md-4 align-middle my-2">
                         <select id="inputState" class="form-select select-bar py-2 rounded-5" onchange="dropdownFilter()">
                             <option selected>Choose...</option>
                             <option value="food">Food</option>
@@ -246,7 +246,7 @@
                         </select>
                         <script src="js/dropdown.js"></script>
                       </div>
-                    <button type="button" class="col-md-2 btn rounded-5 text-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#filterModal">Advanced Filter</button>
+                    <button type="button" class="col-4 col-md-2 lh-sm advanced p-0 m-0 text-end rounded-5 text-light text-decoration-underline" data-bs-toggle="modal" data-bs-target="#filterModal"><small>Advanced Filter</small></button>
                 </div>
             </div>
             <!-- Advanced Filter popup -->

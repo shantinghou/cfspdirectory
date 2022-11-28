@@ -78,7 +78,12 @@ header{
 
 input[type="checkbox"] {
     cursor:pointer;
-  }
+}
+
+.advanced{
+    border:none !important;
+    background:none !important;
+}
 /* carousel images resize, center aligned, as screen size changes */
 .center{
     object-fit: cover;
